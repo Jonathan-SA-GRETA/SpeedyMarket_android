@@ -13,13 +13,51 @@
     tools:context="com.example.stagiaires.speedymarket.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
-    <TextView
-        android:text="@string/txt_bienvenue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/txt_bienvenue"
-        android:layout_weight="1"
-        android:elevation="1dp"
-        android:textAlignment="center"
-        android:textSize="24sp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="133dp"
+            app:srcCompat="@drawable/logo"
+            android:id="@+id/imageButton2" />
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" />
+
+        <ViewAnimator
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/vendeur2"
+                android:id="@+id/imageButton14" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/mag"
+                android:id="@+id/imageButton13" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/woman"
+                android:id="@+id/imageButton15" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="284dp"
+                app:srcCompat="@drawable/MagasinBio"
+                android:id="@+id/imageButton" />
+
+        </ViewAnimator>
+
+    </LinearLayout>
 </LinearLayout>
