@@ -54,7 +54,7 @@
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="284dp"
-                app:srcCompat="@drawable/MagasinBio"
+                app:srcCompat="@drawable/magasin_bio"
                 android:id="@+id/imageButton" />
 
         </ViewAnimator>
