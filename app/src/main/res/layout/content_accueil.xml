@@ -10,7 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="133dp"
         app:srcCompat="@drawable/logo"
-        android:id="@+id/img_logo" />
+        android:id="@+id/img_logo"
+        android:scaleType="fitXY" />
 
     <SearchView
         android:layout_width="match_parent"
