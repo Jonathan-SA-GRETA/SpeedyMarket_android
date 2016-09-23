@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity
 
         switch(id)
         {
-            case R.id.nav_camera:
+            case R.id.nav_categorie:
                 fragmentClass = Categories.class;
                 break;
             default:
