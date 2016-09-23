@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:orientation="vertical">
 
     <LinearLayout
         android:orientation="horizontal"
@@ -30,176 +32,81 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="104dp"
-        android:layout_weight="0.02">
+        android:layout_height="36dp"
+        android:id="@+id/txtProduits">
 
-        <ImageButton
-            android:layout_width="111dp"
-            android:layout_height="111dp"
-            app:srcCompat="@drawable/banane"
-            android:id="@+id/img_banane"
-            android:scaleType="centerCrop" />
-
-        <EditText
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:text="Name"
-            android:ems="10"
-            android:id="@+id/editText" />
-
-        <Spinner
-            android:layout_width="40dp"
-            android:layout_height="58dp"
-            android:id="@+id/sp_quantite"
-            android:entries="@array/sp_quantite" />
-
-        <EditText
-            android:layout_width="52dp"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:text="Name"
-            android:ems="10"
-            android:id="@+id/editText2"
-            android:layout_weight="0.01" />
+        <TextView
+            android:text="@string/articles"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtArticles"
+            android:textSize="20sp"
+            android:textStyle="normal|bold"
+            android:layout_weight="0.83" />
 
         <TextView
             android:text="TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView2"
-            android:layout_weight="0.03"/>
+            android:id="@+id/txtQuantite"
+            android:layout_weight="0.84"
+            tools:text="@string/quantité"
+            android:textSize="20sp"
+            android:textStyle="normal|bold" />
 
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPrix"
+            android:layout_weight="1"
+            tools:text="@string/prix"
+            android:textStyle="normal|bold"
+            android:textSize="20sp" />
     </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="104dp"
-        android:layout_weight="0.02">
+        android:layout_height="wrap_content">
 
-        <ImageButton
-            android:layout_width="111dp"
-            android:layout_height="111dp"
-            app:srcCompat="@drawable/banane"
-            android:id="@+id/img_banane"
-            android:scaleType="centerCrop" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <EditText
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:text="Name"
-            android:ems="10"
-            android:id="@+id/editText" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.02">
 
-        <Spinner
-            android:layout_width="40dp"
-            android:layout_height="58dp"
-            android:id="@+id/sp_quantite"
-            android:entries="@array/sp_quantite" />
+                <ImageButton
+                    android:layout_width="111dp"
+                    android:layout_height="111dp"
+                    app:srcCompat="@drawable/banane"
+                    android:id="@+id/img_banane"
+                    android:scaleType="centerCrop"
+                    android:layout_weight="0.00" />
 
-        <EditText
-            android:layout_width="52dp"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:text="Name"
-            android:ems="10"
-            android:id="@+id/editText2"
-            android:layout_weight="0.01" />
+                <Spinner
+                    android:layout_width="40dp"
+                    android:layout_height="58dp"
+                    android:id="@+id/sp_quantite"
+                    android:entries="@array/sp_quantite"
+                    android:layout_weight="0.01" />
 
-        <TextView
-            android:text="TextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView2"
-            android:layout_weight="0.03"/>
+                <EditText
+                    android:layout_width="107dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:text="Name"
+                    android:ems="10"
+                    android:id="@+id/edtPrix"
+                    style="@style/prixedt" />
 
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="104dp"
-        android:layout_weight="0.02">
+            </LinearLayout>
 
-        <ImageButton
-            android:layout_width="111dp"
-            android:layout_height="111dp"
-            app:srcCompat="@drawable/banane"
-            android:id="@+id/img_banane"
-            android:scaleType="centerCrop" />
+        </LinearLayout>
+    </ScrollView>
 
-        <EditText
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:text="Name"
-            android:ems="10"
-            android:id="@+id/editText" />
-
-        <Spinner
-            android:layout_width="40dp"
-            android:layout_height="58dp"
-            android:id="@+id/sp_quantite"
-            android:entries="@array/sp_quantite" />
-
-        <EditText
-            android:layout_width="52dp"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:text="Name"
-            android:ems="10"
-            android:id="@+id/editText2"
-            android:layout_weight="0.01" />
-
-        <TextView
-            android:text="TextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView2"
-            android:layout_weight="0.03"/>
-
-    </LinearLayout>    <LinearLayout
-    android:orientation="horizontal"
-    android:layout_width="match_parent"
-    android:layout_height="104dp"
-    android:layout_weight="0.02">
-
-    <ImageButton
-        android:layout_width="111dp"
-        android:layout_height="111dp"
-        app:srcCompat="@drawable/banane"
-        android:id="@+id/img_banane"
-        android:scaleType="centerCrop" />
-
-    <EditText
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:ems="10"
-        android:id="@+id/editText" />
-
-    <Spinner
-        android:layout_width="40dp"
-        android:layout_height="58dp"
-        android:id="@+id/sp_quantite"
-        android:entries="@array/sp_quantite" />
-
-    <EditText
-        android:layout_width="52dp"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:ems="10"
-        android:id="@+id/editText2"
-        android:layout_weight="0.01" />
-
-    <TextView
-        android:text="TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView2"
-        android:layout_weight="0.03"/>
-
-</LinearLayout>
 </LinearLayout>

@@ -17,4 +17,12 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="banane">Banane</style>
+
+    <style name="prix">Prix</style>
+
+    <style name="produits">Produits</style>
+
+    <style name="prixedt"></style>
+
 </resources>

@@ -82,12 +82,6 @@ public class MainActivity extends AppCompatActivity
             content_categories fragment = new content_categories();
             fragmentTransaction.add(R.id.content_main, fragment);
             fragmentTransaction.commit();
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {

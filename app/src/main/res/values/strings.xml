@@ -20,4 +20,7 @@
     <string name="txt_epi_sal">Épicerie salée</string>
     <string name="txt_epi_suc">Épicerie sucrée</string>
     <string name="txt_pdts_secs">Produits secs</string>
+    <string name="prix">Prix</string>
+    <string name="articles">Articles</string>
+    <string name="quantité">Quantité</string>
 </resources>
