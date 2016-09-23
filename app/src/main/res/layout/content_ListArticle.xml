@@ -35,34 +35,172 @@
         android:layout_weight="0.02">
 
         <ImageButton
-            android:layout_width="139dp"
+            android:layout_width="111dp"
             android:layout_height="111dp"
             app:srcCompat="@drawable/banane"
             android:id="@+id/img_banane"
             android:scaleType="centerCrop" />
 
-        <Spinner
-            android:layout_width="99dp"
+        <EditText
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:id="@+id/editText" />
+
+        <Spinner
+            android:layout_width="40dp"
+            android:layout_height="58dp"
             android:id="@+id/sp_quantite"
-            android:entries="@android:id/arrayQte" />
-              <string-array name="liste_quantite">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
-    </string-array>
-            />
-              <TextView
+            android:entries="@array/sp_quantite" />
+
+        <EditText
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:layout_weight="0.01" />
+
+        <TextView
             android:text="TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView2"
-            android:layout_weight="1" />
-    </LinearLayout>
+            android:layout_weight="0.03"/>
 
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:layout_weight="0.02">
+
+        <ImageButton
+            android:layout_width="111dp"
+            android:layout_height="111dp"
+            app:srcCompat="@drawable/banane"
+            android:id="@+id/img_banane"
+            android:scaleType="centerCrop" />
+
+        <EditText
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:id="@+id/editText" />
+
+        <Spinner
+            android:layout_width="40dp"
+            android:layout_height="58dp"
+            android:id="@+id/sp_quantite"
+            android:entries="@array/sp_quantite" />
+
+        <EditText
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:layout_weight="0.01" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_weight="0.03"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:layout_weight="0.02">
+
+        <ImageButton
+            android:layout_width="111dp"
+            android:layout_height="111dp"
+            app:srcCompat="@drawable/banane"
+            android:id="@+id/img_banane"
+            android:scaleType="centerCrop" />
+
+        <EditText
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:id="@+id/editText" />
+
+        <Spinner
+            android:layout_width="40dp"
+            android:layout_height="58dp"
+            android:id="@+id/sp_quantite"
+            android:entries="@array/sp_quantite" />
+
+        <EditText
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:layout_weight="0.01" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_weight="0.03"/>
+
+    </LinearLayout>    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="104dp"
+    android:layout_weight="0.02">
+
+    <ImageButton
+        android:layout_width="111dp"
+        android:layout_height="111dp"
+        app:srcCompat="@drawable/banane"
+        android:id="@+id/img_banane"
+        android:scaleType="centerCrop" />
+
+    <EditText
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/editText" />
+
+    <Spinner
+        android:layout_width="40dp"
+        android:layout_height="58dp"
+        android:id="@+id/sp_quantite"
+        android:entries="@array/sp_quantite" />
+
+    <EditText
+        android:layout_width="52dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_weight="0.01" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_weight="0.03"/>
+
+</LinearLayout>
 </LinearLayout>
