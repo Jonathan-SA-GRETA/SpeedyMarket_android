@@ -46,6 +46,17 @@
             android:layout_height="wrap_content"
             android:id="@+id/sp_quantite"
             android:entries="@android:id/arrayQte" />
+              <string-array name="liste_quantite">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+            />
               <TextView
             android:text="TextView"
             android:layout_width="wrap_content"
