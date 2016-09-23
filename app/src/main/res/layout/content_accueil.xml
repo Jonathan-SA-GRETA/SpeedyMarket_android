@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/content_acceuil">
 
-    <ImageButton
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="133dp"
         app:srcCompat="@drawable/logo"
@@ -21,29 +21,33 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageButton
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/vendeur2"
-            android:id="@+id/img_accueil_1" />
+            android:id="@+id/img_accueil_1"
+            android:scaleType="centerCrop" />
 
-        <ImageButton
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/mag"
-            android:id="@+id/img_accueil_2" />
+            android:id="@+id/img_accueil_2"
+            android:scaleType="centerCrop" />
 
-        <ImageButton
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/woman"
-            android:id="@+id/img_accueil_3" />
+            android:id="@+id/img_accueil_3"
+            android:scaleType="centerCrop" />
 
-        <ImageButton
+        <ImageView
             android:layout_width="match_parent"
             android:layout_height="284dp"
             app:srcCompat="@drawable/magasin_bio"
-            android:id="@+id/img_accueil_4" />
+            android:id="@+id/img_accueil_4"
+            android:scaleType="centerCrop" />
 
     </ViewAnimator>
 </LinearLayout>
