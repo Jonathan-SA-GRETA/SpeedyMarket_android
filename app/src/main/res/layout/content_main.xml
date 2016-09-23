@@ -11,53 +11,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.stagiaires.speedymarket.MainActivity"
-    tools:showIn="@layout/app_bar_main">
+    tools:showIn="@layout/app_bar_main"
+    android:orientation="vertical">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-        <ImageButton
-            android:layout_width="match_parent"
-            android:layout_height="133dp"
-            app:srcCompat="@drawable/logo"
-            android:id="@+id/imageButton2" />
-
-        <SearchView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp" />
-
-        <ViewAnimator
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/vendeur2"
-                android:id="@+id/imageButton14" />
-
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/mag"
-                android:id="@+id/imageButton13" />
-
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/woman"
-                android:id="@+id/imageButton15" />
-
-            <ImageButton
-                android:layout_width="match_parent"
-                android:layout_height="284dp"
-                app:srcCompat="@drawable/magasin_bio"
-                android:id="@+id/imageButton" />
-
-        </ViewAnimator>
-
-    </LinearLayout>
 </LinearLayout>
