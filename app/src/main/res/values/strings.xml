@@ -12,4 +12,12 @@
     <string name="txt_poissons">Poissons</string>
     <string name="txt_fruits">Fruits</string>
     <string name="txt_legumes">Légumes</string>
+    <string name="txt_soft">Boissons soft</string>
+    <string name="txt_alcool">Boissons alcoolisées</string>
+    <string name="txt_fromages">Fromages</string>
+    <string name="txt_yaourts">Yaourts</string>
+    <string name="txt_conserves">Conserves</string>
+    <string name="txt_epi_sal">Épicerie salée</string>
+    <string name="txt_epi_suc">Épicerie sucrée</string>
+    <string name="txt_pdts_secs">Produits secs</string>
 </resources>

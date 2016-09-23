@@ -10,150 +10,313 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txt_categorie_titre"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_marginTop="25dp" />
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp">
 
-        <ImageButton
-            android:layout_width="73dp"
-            android:layout_height="73dp"
-            app:srcCompat="@drawable/viande"
-            android:id="@+id/btn_categorie_viande"
-            android:layout_weight="1.01"
-            android:src="@drawable/viande" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.01">
 
-        <ImageButton
-            android:layout_width="73dp"
-            android:layout_height="73dp"
-            app:srcCompat="@drawable/poisson"
-            android:layout_weight="1"
-            android:id="@+id/btn_categorie_poisson"
-            android:src="@drawable/poisson" />
+            <ImageButton
+                android:layout_width="match_parent"
+                app:srcCompat="@drawable/viande"
+                android:id="@+id/btn_categorie_viande"
+                android:layout_height="110dp"
+                android:scaleType="centerCrop" />
 
-        <ImageButton
-            android:layout_width="73dp"
-            android:layout_height="73dp"
-            app:srcCompat="@drawable/fruits"
-            android:id="@+id/imageButton3"
-            android:layout_weight="1" />
+            <TextView
+                android:text="@string/txt_viandes"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_viandes"
+                android:layout_weight="1.01"
+                android:textAlignment="center"
+                android:layout_width="match_parent" />
+        </LinearLayout>
 
-        <ImageButton
-            android:layout_width="73dp"
-            app:srcCompat="@drawable/brocolis"
-            android:id="@+id/imageButton4"
-            android:layout_weight="1"
-            android:layout_height="73dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.01">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                app:srcCompat="@drawable/poisson"
+                android:id="@+id/btn_categorie_poisson"
+                android:layout_height="110dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:text="@string/txt_poissons"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/txt_poissons"
+                android:layout_width="match_parent"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.01">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                app:srcCompat="@drawable/fruits"
+                android:layout_weight="1"
+                android:id="@+id/btn_categorie_fruit"
+                android:layout_height="110dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:text="@string/txt_fruits"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:id="@+id/txt_fruits" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.01">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                app:srcCompat="@drawable/brocolis"
+                android:layout_weight="1"
+                android:id="@+id/btn_categorie_legume"
+                android:layout_height="110dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:text="@string/txt_legumes"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_legumes"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:textAlignment="center" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
+        android:layout_width="match_parent"
+        android:layout_weight="0.44"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
 
-        <TextView
-            android:text="@string/txt_viandes"
-            android:layout_height="wrap_content"
-            android:id="@+id/txt_viandes"
-            android:layout_weight="1"
-            android:textAlignment="center"
-            android:layout_width="95dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
-        <TextView
-            android:text="@string/txt_poissons"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:id="@+id/txt_poissons"
-            android:layout_width="95dp"
-            android:textAlignment="center" />
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="92dp"
+                app:srcCompat="@drawable/ic_menu_gallery"
+                android:layout_weight="1"
+                android:id="@+id/btn_categorie_soft" />
 
-        <TextView
-            android:text="@string/txt_fruits"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_width="95dp"
-            android:textAlignment="center"
-            android:id="@+id/txt_fruits" />
+            <TextView
+                android:text="@string/txt_soft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:id="@+id/txt_soft" />
 
-        <TextView
-            android:text="@string/txt_legumes"
-            android:layout_height="wrap_content"
-            android:id="@+id/txt_legumes"
-            android:layout_weight="1"
-            android:layout_width="95dp"
-            android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                app:srcCompat="@drawable/ic_menu_gallery"
+                android:id="@+id/btn_categorie_alcool"
+                android:layout_weight="1.54"
+                android:layout_height="110dp" />
+
+            <TextView
+                android:text="@string/txt_alcool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_alcool"
+                android:layout_weight="1"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="92dp"
+                app:srcCompat="@drawable/fromages"
+                android:id="@+id/btn_categorie_fromage"
+                android:layout_weight="1"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:text="@string/txt_fromages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_fromages"
+                android:layout_weight="1"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="92dp"
+                app:srcCompat="@drawable/yaourt"
+                android:id="@+id/btn_categorie_yaourts"
+                android:layout_weight="1"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:text="@string/txt_yaourts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_yaourts"
+                android:layout_weight="1"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
     </LinearLayout>
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1">
+        android:layout_marginTop="10dp">
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_menu_gallery"
-            android:id="@+id/imageButton5"
-            android:layout_weight="1" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_menu_gallery"
-            android:id="@+id/imageButton6"
-            android:layout_weight="1" />
+            <ImageButton
+                android:layout_width="match_parent"
+                app:srcCompat="@drawable/conserves"
+                android:id="@+id/btn_categorie_conserves"
+                android:layout_weight="1"
+                android:layout_height="110dp"
+                android:scaleType="centerCrop" />
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_menu_gallery"
-            android:id="@+id/imageButton7"
-            android:layout_weight="1" />
+            <TextView
+                android:text="@string/txt_conserves"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_conserves"
+                android:layout_weight="1"
+                android:textAlignment="center" />
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_menu_gallery"
-            android:id="@+id/imageButton8"
-            android:layout_weight="1" />
-    </LinearLayout>
+        </LinearLayout>
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_menu_gallery"
-            android:id="@+id/imageButton9"
-            android:layout_weight="1" />
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                app:srcCompat="@drawable/sel"
+                android:id="@+id/btn_categorie_epi_sale"
+                android:layout_weight="1"
+                android:scaleType="centerCrop" />
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_menu_gallery"
-            android:id="@+id/imageButton10"
-            android:layout_weight="1" />
+            <TextView
+                android:text="@string/txt_epi_sal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_epi_sal"
+                android:layout_weight="1"
+                android:textAlignment="center" />
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_menu_gallery"
-            android:id="@+id/imageButton11"
-            android:layout_weight="1" />
+        </LinearLayout>
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_menu_gallery"
-            android:id="@+id/imageButton12"
-            android:layout_weight="1" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                app:srcCompat="@drawable/pain_epice"
+                android:id="@+id/btn_categorie_epi_suc"
+                android:layout_weight="1"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:text="@string/txt_epi_suc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_epi_suc"
+                android:layout_weight="1"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                app:srcCompat="@drawable/bol_riz"
+                android:id="@+id/btn_categorie_pdt_secs"
+                android:layout_weight="1"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:text="@string/txt_pdts_secs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_pdts_secs"
+                android:layout_weight="1"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
     </LinearLayout>
 </LinearLayout>
