@@ -34,6 +34,12 @@
             android:layout_height="match_parent">
 
             <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="284dp"
+                app:srcCompat="@drawable/magasin_bio"
+                android:id="@+id/imageButton" />
+
+            <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/vendeur2"
@@ -50,12 +56,6 @@
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/woman"
                 android:id="@+id/imageButton15" />
-
-            <ImageButton
-                android:layout_width="match_parent"
-                android:layout_height="284dp"
-                app:srcCompat="@drawable/magasin_bio"
-                android:id="@+id/imageButton" />
 
         </ViewAnimator>
 
