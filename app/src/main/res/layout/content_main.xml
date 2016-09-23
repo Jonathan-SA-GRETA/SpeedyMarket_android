@@ -36,27 +36,26 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/vendeur2"
-                android:id="@+id/imageButton14" />
-
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/mag"
-                android:id="@+id/imageButton13" />
+                app:srcCompat="@drawable/magasinbio"
+                android:id="@+id/imageButton" />
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/woman"
-                android:id="@+id/imageButton15" />
+                android:id="@+id/imageButton4" />
 
             <ImageButton
-                android:layout_width="match_parent"
-                android:layout_height="284dp"
-                app:srcCompat="@drawable/MagasinBio"
-                android:id="@+id/imageButton" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/vendeur"
+                android:id="@+id/imageButton5" />
 
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/mag"
+                android:id="@+id/imageButton3" />
         </ViewAnimator>
 
     </LinearLayout>
