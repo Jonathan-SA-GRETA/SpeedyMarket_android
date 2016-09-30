@@ -15,7 +15,7 @@
 
         <ImageView
             android:layout_width="138dp"
-            android:layout_height="76dp"
+            android:layout_height="68dp"
             app:srcCompat="@drawable/logo"
             android:id="@+id/img_logo"
             android:scaleType="centerCrop"
