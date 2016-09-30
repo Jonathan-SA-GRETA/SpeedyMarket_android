@@ -53,7 +53,7 @@ public class ArticleAdapter extends BaseAdapter{
         View v;
         ViewHolder holder;
 
-        String URL = "http://192.168.167.217/~alex/cuisine";
+        String URL = "http://91.121.161.48/speedymarket";
 
         if(convertView == null) {
             v = mInflater.inflate(R.layout.list_articles_row, parent, false);
