@@ -82,7 +82,7 @@ public class ArticleAdapter extends BaseAdapter{
             imgLoader.displayImage(URL, holder.photoArticle, options);
         }
         holder.libelleArticle.setText(unArticle.getLibelleArticle());
-        holder.prixArticle.setText(unArticle.getPrixArticle().toString());
+        holder.prixArticle.setText(unArticle.getPrixArticle().toString()+" €");
 
         return v;
     }

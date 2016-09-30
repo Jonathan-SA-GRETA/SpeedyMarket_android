@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="80dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     >
@@ -18,13 +18,12 @@
             android:id="@+id/txtNomArticle"
             android:layout_weight="0.00" />
 
-        <ImageButton
+        <ImageView
             android:layout_width="match_parent"
-            android:layout_height="111dp"
+            android:layout_height="match_parent"
             app:srcCompat="@drawable/banane"
             android:id="@+id/img_banane"
-            android:scaleType="centerCrop"
-            android:layout_weight="0.00" />
+            android:scaleType="centerCrop" />
 
     </LinearLayout>
 
@@ -46,7 +45,8 @@
             android:text="350 €"
             android:ems="10"
             android:id="@+id/edtPrix"
-            style="@style/prixedt" />
+            style="@style/prixedt"
+            android:textAlignment="center" />
 
         <Button
             android:layout_height="match_parent"
