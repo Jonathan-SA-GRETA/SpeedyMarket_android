@@ -42,14 +42,14 @@
             android:id="@+id/txtArticles"
             android:textSize="20sp"
             android:textStyle="normal|bold"
-            android:layout_weight="0.83" />
+            android:layout_weight="0.32" />
 
         <TextView
             android:text="@string/quantité"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/txtQuantite"
-            android:layout_weight="0.84"
+            android:layout_weight="0.23"
             android:textSize="20sp"
             android:textStyle="normal|bold" />
 

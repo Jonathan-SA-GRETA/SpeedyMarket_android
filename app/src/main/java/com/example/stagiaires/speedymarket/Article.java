@@ -47,7 +47,7 @@ public class Article extends  android.support.v4.app.Fragment{
         }
     };
 
-    LibelleArticle = (TextView) v.findViewById(R.id.titre_article);
+    LibelleArticle = (TextView) v.findViewById(R.id.
     descriptionArticle = (EditText) v.findViewById(R.id.description_text);
     descriptionProd = (EditText) v.findViewById(R.id.producer_text);
     btn_add_article = (Button) v.findViewById(R.id.add_article);
