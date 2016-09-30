@@ -34,26 +34,25 @@
             android:layout_height="match_parent">
 
             <Spinner
-                android:layout_width="40dp"
+                android:layout_width="61dp"
                 android:layout_height="58dp"
                 android:id="@+id/sp_quantite"
-                android:entries="@array/sp_quantite"
-                android:layout_weight="0.01" />
+                android:entries="@array/sp_quantite" />
 
-            <EditText
-                android:layout_width="67dp"
-                android:layout_height="match_parent"
-                android:inputType="textPersonName"
-                android:text="350 €"
-                android:ems="10"
-                android:id="@+id/edtPrix"
-                style="@style/prixedt" />
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:text="350 €"
+            android:ems="10"
+            android:id="@+id/edtPrix"
+            style="@style/prixedt" />
 
         <Button
             android:layout_height="match_parent"
             android:id="@+id/btn_add_cart"
             android:background="@android:drawable/ic_input_add"
-            android:layout_width="105dp" />
+            android:layout_width="142dp" />
 
     </LinearLayout>
 
