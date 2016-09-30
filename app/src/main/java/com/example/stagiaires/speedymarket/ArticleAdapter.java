@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
@@ -57,9 +58,9 @@ public class ArticleAdapter extends BaseAdapter{
         if(convertView == null) {
             v = mInflater.inflate(R.layout.list_articles_row, parent, false);
             holder = new ViewHolder();
+            //holder.libelleArticle = (TextView) v.findViewById(R.id.txt)
             holder.prixArticle = (TextView) v.findViewById(R.id.edtPrix);
             holder.photoArticle = (ImageView) v.findViewById(R.id.img_banane);
-;
             v.setTag(holder);
         }
         else {
@@ -80,7 +81,7 @@ public class ArticleAdapter extends BaseAdapter{
                     .build();
             imgLoader.displayImage(URL, holder.photoArticle, options);
         }
-        holder.libelleArticle.setText(unArticle.getLibelleArticle());
+        //holder.libelleArticle.setText(unArticle.getLibelleArticle());
         holder.prixArticle.setText(unArticle.getPrixArticle().toString());
 
         return v;
