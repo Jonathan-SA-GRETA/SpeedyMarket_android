@@ -35,7 +35,7 @@ public abstract class ArticleDAO implements EventAsyncArticle {
                 onTacheTerminee(jsonStringToArticleArrayList(this.ret));
             }
         };
-        requetteHttp.addParam("car", cat.toString());
+        requetteHttp.addParam("cat", cat.toString());
         requetteHttp.execute("http://"+server+path+"getArticles.php");
     }
 
@@ -64,13 +64,12 @@ public abstract class ArticleDAO implements EventAsyncArticle {
         try {
             JSONArray tabJson = new JSONArray(jsonString);
             for (int i=0; i<tabJson.length(); i++){
-                codeArticle = tabJson.getJSONObject(i).getString("codeArticle");
-                libelleArticle = tabJson.getJSONObject(i).getString("LibelleArticle");
-                descriptionArticle = tabJson.getJSONObject(i).getString("descriptionArticle");
-                qtArticle = Integer.parseInt(tabJson.getJSONObject(i).getString("qtArticle"));
-                prixArticle = Float.parseFloat(tabJson.getJSONObject(i).getString("prixArticle"));
-                photoArticle = tabJson.getJSONObject(i).getString("photoArticle");
-                listeArticle.add(new Article(codeArticle, libelleArticle, descriptionArticle, qtArticle, prixArticle,photoArticle) );
+                codeArticle = tabJson.getJSONObject(i).getString("codeA");
+                libelleArticle = tabJson.getJSONObject(i).getString("libelleA");
+                descriptionArticle = tabJson.getJSONObject(i).getString("descriptionA");
+                prixArticle = Float.parseFloat(tabJson.getJSONObject(i).getString("prixhtA"));
+                photoArticle = tabJson.getJSONObject(i).getString("photoA");
+                listeArticle.add(new Article(codeArticle, libelleArticle, descriptionArticle, prixArticle,photoArticle) );
             }
         } catch (JSONException e) {
             Log.d("log","pb decodage JSON Array");
@@ -91,14 +90,13 @@ public abstract class ArticleDAO implements EventAsyncArticle {
 
         try {
             JSONObject objJson = new JSONObject(jsonString);
-            codeArticle = objJson.getString("codeArticle");
-            libelleArticle = objJson.getString("libelleArticle");
-            descriptionArticle = objJson.getString("descriptionArticle");
-            qtArticle = Integer.parseInt(objJson.getString("qtArticle"));
-            prixArticle = Float.parseFloat(objJson.getString("prixArticle"));
-            photoArticle = objJson.getString("photoArticle");
+            codeArticle = objJson.getString("codeA");
+            libelleArticle = objJson.getString("libelleA");
+            descriptionArticle = objJson.getString("descriptionA");
+            prixArticle = Float.parseFloat(objJson.getString("prixhtA"));
+            photoArticle = objJson.getString("photoA");
 
-            unArticle = new Article(codeArticle, libelleArticle, descriptionArticle, qtArticle, prixArticle,photoArticle) ;
+            unArticle = new Article(codeArticle, libelleArticle, descriptionArticle, prixArticle,photoArticle) ;
         } catch (JSONException e) {
             Log.d("log","pb decodage JSON Objet");
         }

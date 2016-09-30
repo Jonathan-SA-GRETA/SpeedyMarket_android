@@ -26,7 +26,6 @@ public class ListArticles extends  android.support.v4.app.ListFragment{
             public void onTacheTerminee(final ArrayList<Article> result) {
 
                 setListAdapter(new ArticleAdapter(result, getActivity().getBaseContext()));
-
             }
 
             @Override

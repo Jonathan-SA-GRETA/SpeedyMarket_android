@@ -12,11 +12,10 @@ public class Article {
     private Float prixArticle;
     private String photoArticle;
 
-    public Article(String codeArticle, String libelleArticle, String descriptionArticle, Integer qtArticle, Float prixArticle, String photoArticle) {
+    public Article(String codeArticle, String libelleArticle, String descriptionArticle, Float prixArticle, String photoArticle) {
         this.codeArticle = codeArticle;
         this.libelleArticle = libelleArticle;
         this.descriptionArticle = descriptionArticle;
-        this.qtArticle = qtArticle;
         this.prixArticle = prixArticle;
         this.photoArticle = photoArticle;
     }
@@ -69,5 +68,13 @@ public class Article {
 
     public void setPrixArticle(Float prixArticle) {
         this.prixArticle = prixArticle;
+    }
+
+    @Override
+    public String toString() {
+        return "Article{" +
+                "codeArticle='" + codeArticle + '\'' +
+                ", libelleArticle='" + libelleArticle + '\'' +
+                '}';
     }
 }
