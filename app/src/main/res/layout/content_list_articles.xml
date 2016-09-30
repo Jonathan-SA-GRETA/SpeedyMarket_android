@@ -45,22 +45,20 @@
             android:layout_weight="0.83" />
 
         <TextView
-            android:text="TextView"
+            android:text="@string/quantité"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/txtQuantite"
             android:layout_weight="0.84"
-            tools:text="@string/quantité"
             android:textSize="20sp"
             android:textStyle="normal|bold" />
 
         <TextView
-            android:text="TextView"
+            android:text="@string/prix"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/txtPrix"
             android:layout_weight="1"
-            tools:text="@string/prix"
             android:textStyle="normal|bold"
             android:textSize="20sp" />
     </LinearLayout>
