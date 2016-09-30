@@ -1,4 +1,4 @@
-package DAO;
+package dao;
 
 import android.util.Log;
 
@@ -34,7 +34,7 @@ public abstract class ArticleDAO implements EventAsyncArticle {
                 onTaskCompleted(jsonStringToArticleArrayList(this.ret));
             }
         };
-        objAsyncTask.execute("http://"+server+path+"getArticle.php");
+        objAsyncTask.execute("http://"+server+path+"getArticles.php");
     }
     public void getArctileById(Integer NumArticle){
         AccesHTTP requetteHttp = new AccesHTTP(){
