@@ -58,7 +58,7 @@ public class ArticleAdapter extends BaseAdapter{
         if(convertView == null) {
             v = mInflater.inflate(R.layout.list_articles_row, parent, false);
             holder = new ViewHolder();
-            //holder.libelleArticle = (TextView) v.findViewById(R.id.txt)
+            holder.libelleArticle = (TextView) v.findViewById(R.id.txtNomArticle);
             holder.prixArticle = (TextView) v.findViewById(R.id.edtPrix);
             holder.photoArticle = (ImageView) v.findViewById(R.id.img_banane);
             v.setTag(holder);
@@ -81,7 +81,7 @@ public class ArticleAdapter extends BaseAdapter{
                     .build();
             imgLoader.displayImage(URL, holder.photoArticle, options);
         }
-        //holder.libelleArticle.setText(unArticle.getLibelleArticle());
+        holder.libelleArticle.setText(unArticle.getLibelleArticle());
         holder.prixArticle.setText(unArticle.getPrixArticle().toString());
 
         return v;

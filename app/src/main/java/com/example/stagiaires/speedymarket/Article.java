@@ -28,7 +28,21 @@ public class Article extends  android.support.v4.app.Fragment{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.page_article, container, false);
+
+        View v = inflater.inflate(R.layout.page_article, container, false);
+
+        LibelleArticle = (TextView) v.findViewById(R.id.titre_article);
+        descriptionArticle = (EditText) v.findViewById(R.id.description_text);
+        descriptionProd = (EditText) v.findViewById(R.id.producer_text);
+        btn_add_article = (Button) v.findViewById(R.id.add_article);
+        btn_remove_article = (Button) v.findViewById(R.id.remove_article);
+        imgPhotoArticle = (ImageButton) v.findViewById(R.id.img_article);
+        imgPhotoProd = (ImageButton) v.findViewById(R.id.img_producer);
+
+        btn_add_article.setOnClickListener(btn_add_article_onclick);
+        btn_remove_article.setOnClickListener(btn_remove_article_onclick);
+
+        return v;
     }
 
 
@@ -46,16 +60,5 @@ public class Article extends  android.support.v4.app.Fragment{
 
         }
     };
-
-    LibelleArticle = (TextView) v.findViewById(R.id.titre_article);
-    descriptionArticle = (EditText) v.findViewById(R.id.description_text);
-    descriptionProd = (EditText) v.findViewById(R.id.producer_text);
-    btn_add_article = (Button) v.findViewById(R.id.add_article);
-    btn_remove_article = (Button) v.findViewById(R.id.remove_article);
-    imgPhotoArticle = (ImageButton) v.findViewById(R.id.img_article);
-    imgPhotoProd = (ImageButton) v.findViewById(R.id.img_producer);
-
-    btn_add_article.setOnClickListener(btn_add_article_onclick);
-    btn_remove_article.setOnClickListener(btn_remove_article_onclick);
 
 }
