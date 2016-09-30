@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:weightSum="1">
 
-        <ImageButton
+        <ImageView
             android:layout_width="138dp"
             android:layout_height="76dp"
             app:srcCompat="@drawable/logo"
