@@ -25,13 +25,14 @@ public abstract class ArticleDAO implements EventAsyncArticle {
     public ArticleDAO() {
     }
 
+
     public void getArticles(String cat){
         AccesHTTP requetteHttp = new AccesHTTP() {
 
             @Override
             protected void onPostExecute(Long result) {
                 Log.d("log", "onPostExecute ArticleDAO");
-                onTaskCompleted(jsonStringToArticleArrayList(this.ret));
+                onTacheTerminee(jsonStringToArticleArrayList(this.ret));
             }
         };
         requetteHttp.addParam("car", cat.toString());
@@ -44,7 +45,7 @@ public abstract class ArticleDAO implements EventAsyncArticle {
             @Override
             protected void onPostExecute(Long result) {
                 Log.d("log","onPostExecute ArticleDAO");
-                onTaskCompleted(jsonStringToArticle(this.ret));
+                onTacheTerminee(jsonStringToArticle(this.ret));
             }
         };
         requetteHttp.addParam("NumArticle", NumArticle.toString());

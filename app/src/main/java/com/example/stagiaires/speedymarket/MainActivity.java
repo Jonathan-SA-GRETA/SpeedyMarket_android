@@ -5,6 +5,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -123,4 +124,13 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+    public void changeFragment(Fragment targetFragment){
+
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.content_main, targetFragment, "fragment")
+                .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                .commit();
+
+    }
 }

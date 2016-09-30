@@ -1,11 +1,18 @@
 package com.example.stagiaires.speedymarket;
 
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.os.Bundle;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import com.example.stagiaires.speedymarket.MainActivity;
+
+import model.Categorie;
+
+import static android.R.attr.fragment;
 
 public class Categories extends  android.support.v4.app.Fragment{
 
@@ -22,77 +29,161 @@ public class Categories extends  android.support.v4.app.Fragment{
     ImageButton gBtn_epi_suc;
     ImageButton gBtn_pdts_secs;
 
-    // TODO: Fonctions
     private View.OnClickListener gBtn_viandesOnClick = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-
+            Bundle bundl = new Bundle();
+            bundl.putString("cat", "VIAPOI_VIA");
+            ListArticles fragment2 = new ListArticles();
+            fragment2.setArguments(bundl);
+            FragmentManager fragmentManager = getFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.content_main, fragment2);
+            fragmentTransaction.commit();
         }
     };
+
     private View.OnClickListener gBtn_poissonsOnClick = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-
+            Bundle bundl = new Bundle();
+            bundl.putString("cat", "VIAPOI_POI");
+            ListArticles fragment2 = new ListArticles();
+            fragment2.setArguments(bundl);
+            FragmentManager fragmentManager = getFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.content_main, fragment2);
+            fragmentTransaction.commit();
         }
     };
     private View.OnClickListener gBtn_fruitsOnClick = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-
+            Bundle bundl = new Bundle();
+            bundl.putString("cat", "FRULEG_FRU");
+            ListArticles fragment2 = new ListArticles();
+            fragment2.setArguments(bundl);
+            FragmentManager fragmentManager = getFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.content_main, fragment2);
+            fragmentTransaction.commit();
         }
     };
     private View.OnClickListener gBtn_legumesOnClick = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-
+            Bundle bundl = new Bundle();
+            bundl.putString("cat", "FRULEG_LEG");
+            ListArticles fragment2 = new ListArticles();
+            fragment2.setArguments(bundl);
+            FragmentManager fragmentManager = getFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.content_main, fragment2);
+            fragmentTransaction.commit();
         }
     };
     private View.OnClickListener gBtn_softsOnClick = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-
+            Bundle bundl = new Bundle();
+            bundl.putString("cat", "BOISSO_NON");
+            ListArticles fragment2 = new ListArticles();
+            fragment2.setArguments(bundl);
+            FragmentManager fragmentManager = getFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.content_main, fragment2);
+            fragmentTransaction.commit();
         }
     };
     private View.OnClickListener gBtn_alcoolsOnClick = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-
+            Bundle bundl = new Bundle();
+            bundl.putString("cat", "BOISSO_ALC");
+            ListArticles fragment2 = new ListArticles();
+            fragment2.setArguments(bundl);
+            FragmentManager fragmentManager = getFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.content_main, fragment2);
+            fragmentTransaction.commit();
         }
     };
     private View.OnClickListener gBtn_fromagesOnClick = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-
+            Bundle bundl = new Bundle();
+            bundl.putString("cat", "PROLAI_FRO");
+            ListArticles fragment2 = new ListArticles();
+            fragment2.setArguments(bundl);
+            FragmentManager fragmentManager = getFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.content_main, fragment2);
+            fragmentTransaction.commit();
         }
     };
     private View.OnClickListener gBtn_yaourtsOnClick = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-
+            Bundle bundl = new Bundle();
+            bundl.putString("cat", "PROLAI_YAO");
+            ListArticles fragment2 = new ListArticles();
+            fragment2.setArguments(bundl);
+            FragmentManager fragmentManager = getFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.content_main, fragment2);
+            fragmentTransaction.commit();
         }
     };
     private View.OnClickListener gBtn_conservesOnClick = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-
+            Bundle bundl = new Bundle();
+            bundl.putString("cat", "CONBOC_CON");
+            ListArticles fragment2 = new ListArticles();
+            fragment2.setArguments(bundl);
+            FragmentManager fragmentManager = getFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.content_main, fragment2);
+            fragmentTransaction.commit();
         }
     };
     private View.OnClickListener gBtn_epi_salOnClick = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-
+            Bundle bundl = new Bundle();
+            bundl.putString("cat", "EPISAL");
+            ListArticles fragment2 = new ListArticles();
+            fragment2.setArguments(bundl);
+            FragmentManager fragmentManager = getFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.content_main, fragment2);
+            fragmentTransaction.commit();
         }
     };
     private View.OnClickListener gBtn_epi_sucOnClick = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-
+            Bundle bundl = new Bundle();
+            bundl.putString("cat", "EPISUC");
+            ListArticles fragment2 = new ListArticles();
+            fragment2.setArguments(bundl);
+            FragmentManager fragmentManager = getFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.content_main, fragment2);
+            fragmentTransaction.commit();
         }
     };
     private View.OnClickListener gBtn_pdts_secsOnClick = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-
+            Bundle bundl = new Bundle();
+            bundl.putString("cat", "PROSEC");
+            ListArticles fragment2 = new ListArticles();
+            fragment2.setArguments(bundl);
+            FragmentManager fragmentManager = getFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.content_main, fragment2);
+            fragmentTransaction.commit();
         }
     };
 
@@ -129,6 +220,7 @@ public class Categories extends  android.support.v4.app.Fragment{
 
         return v;
     }
+
 
 
 }
