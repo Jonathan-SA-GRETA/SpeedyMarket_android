@@ -33,7 +33,7 @@
                     android:layout_width="291dp"
                     android:layout_height="wrap_content"
                     app:srcCompat="@drawable/banane"
-                    android:id="@+id/imageButton3"
+                    android:id="@+id/img_article"
                     android:scaleType="centerCrop"
                     android:layout_weight="0.31" />
 
@@ -53,7 +53,7 @@
                     <NumberPicker
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
-                        android:id="@+id/numberPicker" />
+                        android:id="@+id/NumberPicker" />
 
                     <Button
                         android:layout_width="match_parent"
