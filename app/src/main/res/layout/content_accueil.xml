@@ -6,49 +6,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/content_acceuil">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="133dp"
-        app:srcCompat="@drawable/logo"
-        android:id="@+id/img_logo"
-        android:scaleType="fitXY" />
-
-    <SearchView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp" />
-
-    <ViewAnimator
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/vendeur2"
-            android:id="@+id/img_accueil_1"
-            android:scaleType="centerCrop" />
+            android:layout_width="387dp"
+            android:layout_height="141dp"
+            app:srcCompat="@drawable/logo"
+            android:id="@+id/img_logo"
+            android:scaleType="center" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/mag"
-            android:id="@+id/img_accueil_2"
-            android:scaleType="centerCrop" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/woman"
-            android:id="@+id/img_accueil_3"
-            android:scaleType="centerCrop" />
-
-        <ImageView
+        <SearchView
             android:layout_width="match_parent"
-            android:layout_height="284dp"
-            app:srcCompat="@drawable/magasin_bio"
-            android:id="@+id/img_accueil_4"
-            android:scaleType="centerCrop" />
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp" >
 
-    </ViewAnimator>
+        </SearchView>
+
+        <ViewAnimator
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/mag"
+                android:id="@+id/img_accueil_2"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/woman"
+                android:id="@+id/img_accueil_3"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="284dp"
+                app:srcCompat="@drawable/magasin_bio"
+                android:id="@+id/img_accueil_4"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/vendeur2"
+                android:id="@+id/img_accueil_1"
+                android:scaleType="centerCrop" />
+
+        </ViewAnimator>
+
+    </LinearLayout>
+
 </LinearLayout>

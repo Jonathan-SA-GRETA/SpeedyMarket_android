@@ -6,13 +6,44 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.util.ArrayList;
+
+import dao.ArticleDAO;
+
 public class ListArticles extends  android.support.v4.app.Fragment{
+    private String cat;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.content_list_articles, container, false);
+        String cat =  getArguments().getString("cat");
 
+        //TODO: Manque adapter class
+/*
+        ArticleDAO articleAcces = new ArticleDAO() {
+
+            @Override
+            public void onTacheTerminee(final ArrayList<Article> result) {
+
+                setListAdapter(new ArticleAdapter(getBaseContext(), result));
+
+            }
+
+            @Override
+            public void onTacheTerminee(Article result) {
+
+            }
+
+            @Override
+            public void onTacheTerminee(String result) {
+
+            }
+
+        };
+
+        articleAcces.getArticles(cat);
+*/
         return v;
     }
 
