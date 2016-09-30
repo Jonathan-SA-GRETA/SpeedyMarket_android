@@ -3,7 +3,11 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/nav_acceuil"
+            android:icon="@drawable/categories"
+            android:title="Acceuil" />
+        <item
+            android:id="@+id/nav_categorie"
             android:icon="@drawable/categories"
             android:title="Catégorie" />
     </group>
@@ -11,11 +15,11 @@
     <item android:title="Compte">
         <menu>
             <item
-                android:id="@+id/nav_share"
+                android:id="@+id/nav_gerer"
                 android:icon="@drawable/ic_menu_share"
                 android:title="Gérer" />
             <item
-                android:id="@+id/nav_send"
+                android:id="@+id/nav_connexion"
                 android:icon="@drawable/ic_menu_send"
                 android:title="Connexion" />
         </menu>
