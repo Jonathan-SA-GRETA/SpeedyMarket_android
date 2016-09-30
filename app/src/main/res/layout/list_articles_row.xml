@@ -10,7 +10,7 @@
             android:orientation="horizontal"
             android:layout_width="452dp"
             android:layout_height="match_parent"
-            android:weightSum="1">
+            android:layout_weight="1">
 
             <ImageButton
                 android:layout_width="111dp"
@@ -35,7 +35,6 @@
                 android:ems="10"
                 android:id="@+id/edtPrix"
                 style="@style/prixedt" />
-
             <Button
                 android:layout_width="103dp"
                 android:layout_height="match_parent"
