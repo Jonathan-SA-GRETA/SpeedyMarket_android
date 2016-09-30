@@ -1,45 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     >
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="452dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="120dp"
+        android:layout_height="match_parent">
 
-            <ImageButton
-                android:layout_width="111dp"
-                android:layout_height="111dp"
-                app:srcCompat="@drawable/banane"
-                android:id="@+id/img_banane"
-                android:scaleType="centerCrop"
-                android:layout_weight="0.00" />
+        <TextView
+            android:text="@string/nomarticle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtNomArticle"
+            android:layout_weight="0.00" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="111dp"
+            app:srcCompat="@drawable/banane"
+            android:id="@+id/img_banane"
+            android:scaleType="centerCrop"
+            android:layout_weight="0.00" />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="233dp"
+            android:layout_height="match_parent">
 
             <Spinner
                 android:layout_width="40dp"
                 android:layout_height="58dp"
                 android:id="@+id/sp_quantite"
                 android:entries="@array/sp_quantite"
-                android:layout_weight="0.24" />
+                android:layout_weight="0.01" />
 
             <EditText
-                android:layout_width="75dp"
+                android:layout_width="67dp"
                 android:layout_height="match_parent"
                 android:inputType="textPersonName"
                 android:text="350 €"
                 android:ems="10"
                 android:id="@+id/edtPrix"
                 style="@style/prixedt" />
-            <Button
-                android:layout_width="103dp"
-                android:layout_height="match_parent"
-                android:id="@+id/btn_add_cart"
-                android:background="@android:drawable/ic_input_add" />
 
-        </LinearLayout>
+        <Button
+            android:layout_height="match_parent"
+            android:id="@+id/btn_add_cart"
+            android:background="@android:drawable/ic_input_add"
+            android:layout_width="105dp" />
+
+    </LinearLayout>
+
 </LinearLayout>

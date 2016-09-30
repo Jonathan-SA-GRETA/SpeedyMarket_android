@@ -23,4 +23,5 @@
     <string name="prix">Prix</string>
     <string name="articles">Articles</string>
     <string name="quantité">Quantité</string>
+    <string name="nomarticle" />
 </resources>
