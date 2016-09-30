@@ -22,6 +22,80 @@ public class Categories extends  android.support.v4.app.Fragment{
     ImageButton gBtn_epi_suc;
     ImageButton gBtn_pdts_secs;
 
+    // TODO: Fonctions
+    private View.OnClickListener gBtn_viandesOnClick = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+
+        }
+    };
+    private View.OnClickListener gBtn_poissonsOnClick = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+
+        }
+    };
+    private View.OnClickListener gBtn_fruitsOnClick = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+
+        }
+    };
+    private View.OnClickListener gBtn_legumesOnClick = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+
+        }
+    };
+    private View.OnClickListener gBtn_softsOnClick = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+
+        }
+    };
+    private View.OnClickListener gBtn_alcoolsOnClick = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+
+        }
+    };
+    private View.OnClickListener gBtn_fromagesOnClick = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+
+        }
+    };
+    private View.OnClickListener gBtn_yaourtsOnClick = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+
+        }
+    };
+    private View.OnClickListener gBtn_conservesOnClick = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+
+        }
+    };
+    private View.OnClickListener gBtn_epi_salOnClick = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+
+        }
+    };
+    private View.OnClickListener gBtn_epi_sucOnClick = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+
+        }
+    };
+    private View.OnClickListener gBtn_pdts_secsOnClick = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+
+        }
+    };
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -40,7 +114,18 @@ public class Categories extends  android.support.v4.app.Fragment{
         gBtn_epi_suc = (ImageButton) v.findViewById(R.id.btn_categorie_epi_suc);
         gBtn_pdts_secs = (ImageButton) v.findViewById(R.id.btn_categorie_pdt_secs);
 
-        //TODO : Listeners onClick
+        gBtn_viandes.setOnClickListener(gBtn_viandesOnClick);
+        gBtn_poissons.setOnClickListener(gBtn_poissonsOnClick);
+        gBtn_fruits.setOnClickListener(gBtn_fruitsOnClick);
+        gBtn_legumes.setOnClickListener(gBtn_legumesOnClick);
+        gBtn_softs.setOnClickListener(gBtn_softsOnClick);
+        gBtn_alcools.setOnClickListener(gBtn_alcoolsOnClick);
+        gBtn_fromages.setOnClickListener(gBtn_fromagesOnClick);
+        gBtn_yaourts.setOnClickListener(gBtn_yaourtsOnClick);
+        gBtn_conserves.setOnClickListener(gBtn_conservesOnClick);
+        gBtn_epi_sal.setOnClickListener(gBtn_epi_salOnClick);
+        gBtn_epi_suc.setOnClickListener(gBtn_epi_sucOnClick);
+        gBtn_pdts_secs.setOnClickListener(gBtn_pdts_secsOnClick);
 
         return v;
     }
