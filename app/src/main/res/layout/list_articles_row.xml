@@ -30,11 +30,11 @@
 
     <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="233dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <Spinner
-                android:layout_width="61dp"
+                android:layout_width="135dp"
                 android:layout_height="58dp"
                 android:id="@+id/sp_quantite"
                 android:entries="@array/sp_quantite" />
@@ -52,7 +52,7 @@
             android:layout_height="match_parent"
             android:id="@+id/btn_add_cart"
             android:background="@android:drawable/ic_input_add"
-            android:layout_width="142dp" />
+            android:layout_width="match_parent" />
 
     </LinearLayout>
 
